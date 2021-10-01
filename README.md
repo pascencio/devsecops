@@ -32,3 +32,6 @@ jenkins_1  | *************************************************************
 
 Seleccionamos instalar los sugeridos.
 
+## TODO
+
+- [ ] Terminar documentación xD
