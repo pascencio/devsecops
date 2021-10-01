@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  sonarqube:
+    image: sonarqube
+    ports:
+      - 9000:9000
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+  jenkins:
+    image: jenkins/jenkins
+    privileged: true
+    ports:
+      - 8080:8080
+      - 50000:50000
+    environment:
+      - DOCKER_HOST=tcp://docker:2376
+      - DOCKER_TLS_VERIFY=1
+      - DOCKER_CERT_PATH=/certs/client
+    volumes:
+      - ./var/jenkins_home:/var/jenkins_home
+      - ./certs/client:/certs/client:ro
