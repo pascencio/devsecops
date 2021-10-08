@@ -32,6 +32,20 @@ jenkins_1  | *************************************************************
 
 Seleccionamos instalar los sugeridos.
 
+# Repositorio de Ejemplo
+
+https://github.com/KaribuLab/karibu-java-tdd-example.git
+
+# Instalar Plugins
+
+SonarQube Scanner
+OWASP Dependency Check
+OWASP ZAP
+
+![](./docs/2021-10-08_17-33.png)
+
+![](./docs/2021-10-08_17-34.png)
+
 ## TODO
 
 - [ ] Terminar documentación xD
